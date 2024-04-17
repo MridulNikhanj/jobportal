@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 :root{
-    --main-color:#2980b9;
+    --main-color:#29357E;
     --red:red;
     --light-color:#777;
     --light-bg:#eee;
@@ -31,8 +31,8 @@
 }
 
 ::-webkit-scrollbar{
-    width: 1rem;
-    height: .5rem;
+    width: .8rem;
+    height: .3rem;
 }
 
 ::-webkit-scrollbar-track{
@@ -129,12 +129,12 @@ section{
 
 .header .flex .logo{
     font-size: 2.2rem;
-    color: var(--black);
+    color: var(--main-color);
 }
 
 .header .flex .logo i{
     margin-right: .5rem;
-    color: var(--light-color);
+    color: var(--main-color);
 }
 
 .header .flex .navbar a{
@@ -152,15 +152,16 @@ section{
 }
 
 .home-container{
-    background: url('../images/home-bg.jpg'), rgba(0,0,0,.7) no-repeat;
+    background: url('../images/home-bg.jpg'), rgba(0,0,0,.45) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-blend-mode: color;
+    margin-bottom: 4rem;
 }
 
 .home-container .home{
-    min-height: 80vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -207,14 +208,15 @@ section{
     grid-template-columns: repeat(auto-fit, 25rem);
     justify-content: center;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 5rem 2rem;
+    margin-bottom: 10rem;
 }
 
 .category .box-container .box{
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     border: var(--border);
-    padding: 2rem;
+    padding: 4rem;
     background: var(--white);
     display: flex;
     align-items: center;
@@ -261,10 +263,15 @@ section{
 }
 
 
+.jobs-container{
+    margin-bottom: 12rem;
+}
+
+
 .jobs-container .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, 35rem);
-    gap: 1.5rem;
+    gap:1.5rem;
     align-items: flex-start;
     justify-content: center;
 
@@ -367,9 +374,16 @@ section{
 
 /* about page css */
 
+.about{
+    margin-bottom: 15rem;
+}
+
 .about img{
-    width: 100%;
-    margin-bottom: 1.5rem;
+    width: 80%;
+    height: 50%;
+    margin-left: 10rem;
+    margin-top: -25rem;
+    margin-bottom: -15rem;
 }
 
 .about .box{
@@ -398,12 +412,17 @@ section{
 
 /* reviews css */
 
+.reviews{
+    margin-top: 10rem;
+}
+
 .reviews .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, 35rem);
-    gap: 1.5rem;
+    gap: 5rem 2rem;
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 10rem;
 }
 
 .reviews .box-container .box{
@@ -476,6 +495,7 @@ section{
     border: var(--border);
     border-radius: .5rem;
     padding: 2rem;
+    margin-bottom: 4rem;
 }
 
 .job-filter form .flex{
@@ -689,7 +709,7 @@ section{
     border: var(--border);
     border-radius: .5rem;
     background-color: var(--white);
-    padding: 2rem;
+    padding: 5rem;
 }
 
 
@@ -751,9 +771,11 @@ section{
 .contact .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, 35rem);
-    gap: 1.5rem;
+    gap: 5rem 2rem;
     align-items: flex-start;
     justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 8rem;
 }
 
 .contact .box-container .box{
@@ -793,6 +815,7 @@ section{
     box-shadow: var(--box-shadow);
     padding:2rem;
     text-align: center;
+    margin-bottom: 10rem;
 }
 
 .contact form h3{
@@ -842,15 +865,16 @@ section{
 /* login form css */
 
 .account-form-container{
-    background: url('../images/home-bg.jpg'), rgba(0,0,0,.7) no-repeat;
+    background: url('../images/home-bg.jpg'), rgba(0,0,0,.45) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-blend-mode: color;
+    margin-bottom: 4rem;
 }
 
 .account-form-container .account-form{
-    min-height: 80vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -915,7 +939,7 @@ section{
 .footer .grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, 30rem);
-    gap: 1.5rem;
+    gap: 10rem;
     justify-content: center;
     align-items: flex-start;
 }
@@ -961,6 +985,102 @@ section{
 }
 
 
+
+/* infinite slider logo */
+
+
+@keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 30px 0px;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before, .logos:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    /* background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255)); */
+  }
+  
+  .logos:after {
+    right: 0;
+    /* background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255)); */
+  }
+  
+  .logo_items {
+    display: inline-block;
+    animation: 70s slides infinite linear;
+  }
+  
+  .logos:hover .logo_items {
+    animation-play-state: paused;
+  }
+  
+  .logo_items img{
+    height: 100px;
+  }
+
+
+
+
+
+  .logos2 {
+    overflow: hidden;
+    padding: 30px 0px;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos2:before, .logos2:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  .logos2:before {
+    left: 0;
+    /* background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255)); */
+  }
+  
+  .logos2:after {
+    right: 0;
+    /* background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255)); */
+  }
+  
+  .logo_items2 {
+    display: inline-block;
+    animation: 70s slides infinite reverse linear;
+  }
+  
+  .logos2:hover .logo_items2 {
+    animation-play-state: paused;
+  }
+  
+  .logo_items2 img{
+    height: 100px;
+  }
+
+  
 
 
 /* media queries */

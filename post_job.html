@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Job</title>
+    <title>Register</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -32,73 +32,40 @@
     </header>
     <!-- header section ends -->
 
-    <!-- view job section starts -->
 
-    <section class="job-details">
+    <!-- account section starts -->
 
-        <h1 class="heading">job details</h1>
+    <div class="account-form-container">
 
-        <div class="details">
-            <div class="job-info">
-                <h3>senior web designer</h3>
-                <a href="view_company.html">Microsoft</a>
-                <p><i class="fas fa-map-marker-alt"></i> mumbai, india</p>
-            </div>
-            <div class="basic-details">
-                <h3>salary</h3>
-                <p>10000 - 25000 per month</p>
-                <h3>benefits</h3>
-                <p>wrk from home, health insurance</p>
-                <h3>job type</h3>
-                <p>part-time</p>
-                <h3>schedule</h3>
-                <p>day shift</p>
-            </div>
-            <ul>
-                <h3>requirements</h3>
-                <li>education : <span>graduate</span></li>
-                <li>age : <span>25+</span></li>
-                <li>language : <span>hindi, english</span></li>
-                <li>experience : <span>3+ years</span></li>
-            </ul>
-            <ul>
-                <h3>qualifications</h3>
-                <li>Bachelor's (Preferred)</li>
-                <li>PHP: 1 year (Preferred)</li>
-                <li>web design: 1 year (Preferred)</li>
-                <li>Wordpress: 1 year (Preferred)</li>
-                <li>total work: 3 years (Required)</li>
-            </ul>
-            <ul>
-                <h3>skills</h3>
-                <li>html5 and css3</li>
-                <li>javascript</li>
-                <li>node.js</li>
-                <li>react.js</li>
-                <li>php</li>
-                <li>mysql</li>
-            </ul>
+        <section class="account-form">
 
-            <div class="description">
-                <h3>job description</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium iste repellendus quae sequi aliquam atque minus ipsam dicta illo soluta.</p>
-                <ul>
-                    <li>Hiring 2 candidate for this role</li>
-                    <li>posted 2 days ago</li>
-                </ul>
-            </div>
-            <form action="" method="post" class="flex-btn">
-                <input type="submit" value="apply now" name="apply" class="btn">
-                <button type="submit" class="save"><i class="far fa-heart"></i> <span>save job</span></button>
+            <form action="" method="post">
+                <h3>post a job</h3>
+<br>
+                <h1 style="text-align: left;">Job Title <span style="color: red;">*</span></h1>
+                <input type="text" required name="name" maxlength="20" placeholder="job title" class="input">
+                <h1 style="text-align: left;">Job Location <span style="color: red;">*</span></h1>
+                <input type="text" required name="name" maxlength="20" placeholder="job location" class="input">
+                <h1 style="text-align: left;">Job Type <span style="color: red;">*</span></h1>
+                <input type="text" required name="name" maxlength="20" placeholder="job type" class="input">
+                <h1 style="text-align: left;">Education Level <span style="color: red;">*</span></h1>
+                <input type="text" required name="name" maxlength="20" placeholder="education level required" class="input">
+                <h1 style="text-align: left;">Work Shifts <span style="color: red;">*</span></h1>
+                <input type="text" required name="name" maxlength="20" placeholder="work shifts" class="input">
+                <h1 style="text-align: left;">Estimated Salary <span style="color: red;">*</span></h1>
+                <input type="text" required name="name" maxlength="20" placeholder="estimated salary (range)" class="input">
+                <!-- <input type="email" required name="email" maxlength="50" placeholder="enter your email" class="input"> -->
+                <!-- <input type="password" required name="pass" maxlength="20" placeholder="enter your password" class="input"> -->
+                <!-- <input type="password" required name="c_pass" maxlength="20" placeholder="confirm your password" class="input"> -->
+                <!-- <p>already have an account? <a href="login.html">login now</a></p> -->
+                <input type="submit" value="post job" name="submit" class="btn">
             </form>
-        </div>
-    </section>
+        </section>
+    </div>
 
 
 
-
-
-    <!-- view job section ends -->
+    <!-- account section ends -->
 
 
 
